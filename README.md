@@ -5,7 +5,7 @@
       ```git clone https://github.com/guiantz/ssi```
 2. Change dir to project folder  
       ```cd ssi```
-3. Install dependencies 
+3. Install dependencies  
       ```npm install```
 4. Initialize app  
    - REST API example: ```node rest-api.js```  
