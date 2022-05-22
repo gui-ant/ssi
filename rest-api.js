@@ -39,7 +39,7 @@ app.put("/user/:id", function (req, res) {
 });
 
 // DELETE /user/:id
-app.patch("/user/:id", function (req, res) {
+app.delete("/user/:id", function (req, res) {
   let u = db.getUser(req.params.id);
   if (u) {
     db.deleteUser(u.id, req.body);
