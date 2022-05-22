@@ -14,18 +14,18 @@ app.get("/user", function (req, res) {
 app.get("/user/:id", function (req, res) {
   let u = db.getUser(req.params.id);
   if (u) {
-    return res.json(u);
+    res.json(u);
   }
-  return res.sendStatus(404);
+  res.sendStatus(404);
 });
 
 // POST /user
 app.post("/user", function (req, res) {
   let u = db.createUser(req.body);
   if (u) {
-    return res.json(db.getUser(u.id));
+    res.json(db.getUser(u.id));
   }
-  return res.sendStatus(409);
+  res.sendStatus(409);
 });
 
 // PUT /user/:id
@@ -33,9 +33,9 @@ app.put("/user/:id", function (req, res) {
   let u = db.getUser(req.params.id);
   if (u) {
     db.updateUser(u.id, req.body);
-    return res.json(db.getUser(u.id));
+    res.json(db.getUser(u.id));
   }
-  return res.sendStatus(404);
+  res.sendStatus(404);
 });
 
 // DELETE /user/:id
@@ -43,7 +43,7 @@ app.patch("/user/:id", function (req, res) {
   let u = db.getUser(req.params.id);
   if (u) {
     db.deleteUser(u.id, req.body);
-    return res.json(db.getUser(u.id));
+    res.json(db.getUser(u.id));
   }
-  return res.sendStatus(404);
+  res.sendStatus(404);
 });
