@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "996",
+      "name": "Guilherme Antunes",
+      "pass": "$2a$12$nE8uw2OJO90BoE1dMGwGYeAamqKXvODx..Yfedet1NomWTzlON0jO"
+    },
+    {
+      "id": "997",
+      "name": "David Gaspar",
+      "pass": "$2a$12$nE8uw2OJO90BoE1dMGwGYeAamqKXvODx..Yfedet1NomWTzlON0jO"
+    },
+    {
+      "id": "998",
+      "name": "Jorge Amorim",
+      "pass": "$2a$12$nE8uw2OJO90BoE1dMGwGYeAamqKXvODx..Yfedet1NomWTzlON0jO"
+    }
+  ]
+}
