@@ -1,4 +1,5 @@
 import { db } from "./app.js";
+import * as bcrypt from "bcrypt";
 
 function getAllUsers() {
   return db.getObject("/users");
@@ -14,8 +15,10 @@ function getUser(id) {
 
 function createUser(data) {
   if (!getUser(data[0].id)) {
+    const salt = bcrypt.genSaltSync(10);
+    data[0].pass = bcrypt.hashSync(data[0].pass, salt);
     db.push("/users", data, false);
-    return getUser(data[0].id);
+    return 1;
   }
   return;
 }

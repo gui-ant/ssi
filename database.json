@@ -1,19 +1,29 @@
 {
-  "users": [
-    {
-      "id": "996",
-      "name": "Guilherme Antunes",
-      "pass": "$2a$12$nE8uw2OJO90BoE1dMGwGYeAamqKXvODx..Yfedet1NomWTzlON0jO"
-    },
-    {
-      "id": "997",
-      "name": "David Gaspar",
-      "pass": "$2a$12$nE8uw2OJO90BoE1dMGwGYeAamqKXvODx..Yfedet1NomWTzlON0jO"
-    },
-    {
-      "id": "998",
-      "name": "Jorge Amorim",
-      "pass": "$2a$12$nE8uw2OJO90BoE1dMGwGYeAamqKXvODx..Yfedet1NomWTzlON0jO"
-    }
-  ]
+    "users": [
+        {
+            "id": "25970",
+            "name": "David Gaspar",
+            "pass": "$2a$12$ntd5XKIheZBZJXSCCLpdj.5Of9DpdyfOd.knk75JCdCfBEtppG87u"
+        },
+        {
+            "id": "82911",
+            "name": "Jorge Amorim",
+            "pass": "$2a$12$ntd5XKIheZBZJXSCCLpdj.5Of9DpdyfOd.knk75JCdCfBEtppG87u"
+        },
+        {
+            "id": "87361",
+            "name": "Guilherme Antunes",
+            "pass": "$2a$12$ntd5XKIheZBZJXSCCLpdj.5Of9DpdyfOd.knk75JCdCfBEtppG87u"
+        },
+        {
+            "id": "999",
+            "name": "Carlos Serrão",
+            "pass": "$2b$10$BN2bK71D6n.DKahvHWEnmuQJjRjnyfXo/MY3cn/bW/jTB5KhJsUN."
+        },
+        {
+            "id": "12345",
+            "name": "Carlos Serrão",
+            "pass": "$2b$10$Vph7IuqqRl1LYnVPYhHBx.kyEvUzifP8RElpssVwu1d4rCMM76qza"
+        }
+    ]
 }

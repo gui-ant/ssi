@@ -19,4 +19,27 @@ app.use(express.json());
 // Database initialization
 const db = new JsonDB(new Config("database.json", true, true)); // Config params: <filename>, <saveOnPush>, <humanReadable>
 
+//  Default database content
+db.push(
+  "/users",
+  [
+    {
+      id: "25970",
+      name: "David Gaspar",
+      pass: "$2a$12$ntd5XKIheZBZJXSCCLpdj.5Of9DpdyfOd.knk75JCdCfBEtppG87u",
+    },
+    {
+      id: "82911",
+      name: "Jorge Amorim",
+      pass: "$2a$12$ntd5XKIheZBZJXSCCLpdj.5Of9DpdyfOd.knk75JCdCfBEtppG87u",
+    },
+    {
+      id: "87361",
+      name: "Guilherme Antunes",
+      pass: "$2a$12$ntd5XKIheZBZJXSCCLpdj.5Of9DpdyfOd.knk75JCdCfBEtppG87u",
+    },
+  ],
+  true
+);
+
 export { app, db };
