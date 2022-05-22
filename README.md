@@ -8,5 +8,4 @@
 3. Install dependencies  
       ```npm install```
 4. Initialize app  
-   - REST API example: ```node rest-api.js```  
-   - JWT protected route example: ```node jwt.js```
+      ```node rest-api.js```
