@@ -34,7 +34,7 @@ function deleteUser(id) {
 function updateUser(id, data) {
   let i = db.getIndex("/users", id);
   if (i !== -1) {
-    db.push("/users[" + i + "]", data);
+    db.push("/users[" + i + "]", data, false);
   }
   return getUser(id);
 }
