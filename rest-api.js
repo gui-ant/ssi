@@ -74,9 +74,9 @@ app.post("/login", function (req, res) {
 app.get("/jwt/user/:id", ensureToken, function (req, res) {
   jwt.verify(req.token, API_KEY, function (err, data) {
     if (err || data.id !== req.params.id) {
-      res.json(data);
-    } else {
       res.sendStatus(403);
+    } else {
+      res.json(data);
     }
   });
 });
