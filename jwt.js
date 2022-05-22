@@ -31,7 +31,7 @@ app.get("/user", ensureToken, function (req, res) {
 });
 
 function ensureToken(req, res, next) {
-  const authHeader = req.headers["authorization"];
+  const authHeader = req.headers["authorization"]; // Bearer <key>
   if (typeof authHeader !== "undefined") {
     req.token = authHeader.split(" ")[1];
     next();
