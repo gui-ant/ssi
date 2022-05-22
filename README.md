@@ -7,4 +7,4 @@
       ```cd ssi```
 3. Initialize app  
    - REST API example: ```node rest-api.js```  
-   - JWT protected route example: ```node rest-api-jwt.js```
+   - JWT protected route example: ```node jwt.js```
