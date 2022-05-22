@@ -2,6 +2,7 @@ import { app } from "./app.js";
 import * as db from "./functions.js";
 
 import jwt from "jsonwebtoken";
+
 const MY_SECRET_KEY = "5599299BD5284E2BB7F3B69CD568F"; // 256-bit WEP Key
 
 // POST /login
@@ -21,8 +22,10 @@ app.get("/user", ensureToken, function (req, res) {
     if (err) {
       res.sendStatus(403);
     } else {
-      const users = db.getAllUsers();
-      res.json({ _comment: "Uff! It worked!", users });
+      res.json({
+        _comment: "Uff! It worked!",
+        users: db.getAllUsers(),
+      });
     }
   });
 });
@@ -30,7 +33,7 @@ app.get("/user", ensureToken, function (req, res) {
 function ensureToken(req, res, next) {
   const authHeader = req.headers["authorization"];
   if (typeof authHeader !== "undefined") {
-    req.token = authHeader.split()[1];
+    req.token = authHeader.split(" ")[1];
     next();
   } else {
     res.sendStatus(403);
