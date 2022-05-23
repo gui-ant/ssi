@@ -9,8 +9,6 @@ import jwt from "jsonwebtoken";
  *
  *******************************/
 
-const API_KEY = "5599299BD5284E2BB7F3B69CD568F"; // 256-bit WEP Key
-
 // CREATE a user with request body data
 app.post("/user", function (req, res) {
   let u = db.createUser(req.body);
@@ -58,6 +56,8 @@ app.delete("/user/:id", function (req, res) {
  * JWT Protected route
  *
  ****************************/
+
+const API_KEY = "5599299BD5284E2BB7F3B69CD568F"; // 256-bit WEP Key
 
 // READ user info by id
 app.get("/jwt/user/:id", ensureToken, function (req, res) {
